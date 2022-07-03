@@ -121,6 +121,7 @@ ggplot(age_sum, aes(x=age_group, y=total_reviews)) +
 
 # 2. Which is the most expensive lego set purchased by customers who are at least 25 years old?
     # Report: According to the column chart, customer of age 29 purchased the most expensive lego set at price of USD 260.
+
 ######################################################################################################################################################
 
 # Create new dataframe with customer who are at least 25 years old.
