@@ -200,7 +200,7 @@ kurtosis(sales$NA_Sales)
 # value higher than 3 indicated leptokurtic distribution (heavy-tailed distribution)
 
 # Remove outliers
-new_na <- filter(sales, NA_Sales < 20)
+new_na <- filter(sales, NA_Sales < 1)
 
 # Boxplot without outliers
 ggplot(new_na,aes(x = NA_Sales)) +
