@@ -106,7 +106,7 @@ View(predictTotal)
 # Convert predicted values to dataframe
 total_df <- data.frame(predictTotal)
 
-# Create final dataframe with genre name and predicted global sales
+# Create final dataframe with actual and predicted global sales
 final_total <- cbind(total[("Global_Sales")], total_df)
 
 # Rename column name
@@ -114,7 +114,7 @@ final_total <- final_total %>% rename(Predicted_Global_Sales = fit,
                                       Actual_Global_Sales = Global_Sales)
 
 # Print final dataframe
-final_total
+View(final_total)
 
 
 ######################################################################################################################################################
